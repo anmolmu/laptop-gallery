@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Laptop Gallery</title>
+</head>
+<body style="margin-top : 50px">
+<h1 style="color: #666666;
+  background-color: #f8f8f8;
+  font-size: 32px;
+  line-height: 1.35;
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 0 1px 1px white;">Laptop Gallery</h1>
+<% todos.forEach( function ( todo ){ %>
+  <table align='center' cellspacing="5px">
+  	<tr>
+  	<td rowspan="2">
+  	<img src="images/<%=todo.id%>.jpg" style="width:250px;height:200px;vertical-align:middle">
+  	</td>
+  	<td>
+  	<u><h1><%=todo.name%></h1></%=todo.name%></u>
+  	</td>
+  	</tr>
+  	<tr><td colspan=5><b><h2>Rs.<%=todo.price%></h2></b></td></tr></table>
+  	<table cellspacing=50 style="text-align:center">
+  	<tr>
+  	<td><b>input</b></td>
+  	<td><b>power</b></td>
+  	<td><b>display</b></td>
+  	<td><b>storage</b></td>
+  	<td><b>memory</b></td>
+  	<td><b>graphics</b></td>
+  	</tr>
+  	
+  	<tr>
+  	<td><%=todo.input%></td>
+  	<td><%=todo.power%></td>
+  	<td><%=todo.display%></td>
+  	<td><%=todo.storage%></td>
+  	<td><%=todo.memory%></td>
+  	<td><%=todo.graphics%></td>
+  	</tr>
+  	</table>
+  </table>
+<% }); %>
+</body>
+</html>

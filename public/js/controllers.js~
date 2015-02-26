@@ -1,0 +1,10 @@
+var mycontroller = angular.module('myApp', []);
+
+mycontroller.controller('ListCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+    $http.get('/list').success(function(data) {
+      $scope.list = data;
+    });
+	window.alert("hello world!!");
+    $scope.orderProp = 'id';
+  }]);

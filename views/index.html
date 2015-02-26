@@ -1,0 +1,40 @@
+<html ng-app="myApp">
+  <head>
+    <title>Laptop Gallery</title>
+    <link rel='stylesheet' href='/stylesheets/screen.css' />
+    <script src="js/angular.js"></script>
+    <script src="/js/controllers.js"></script>
+  </head>
+  <body ng-controller="ListCtrl">
+  <h1 id="page-title">Laptop Gallery</h1>
+  Search:<input ng-model="query">
+  <select ng-model="order">
+  	<option value="price">Price</option>
+  	<option value="name">Name</option>
+  </select>
+<div id="list">
+<div ng-repeat="todo in list | filter : query | orderBy : order">
+	<a href="/details?id={{todo.id}}" style="text-decoration: none;">
+  <div class="item" style="font-size:20px">
+  <b>{{todo.name}}
+  <table cellpadding="4">
+	<tr><td rowspan="4">
+        <img src="images/{{todo.id}}.jpg" style="width:250px;height:200px;vertical-align:middle">
+</td><td>
+
+    
+       <h2> Rs.{{todo.price}}</h2> <br/>
+    </td></tr>
+    <tr><td style="font-size:15px;color:black;">&#9899;{{todo.memory}}</td></tr>
+    <tr><td style="font-size:15px;color:black;">&#9899;{{todo.storage}}</td></tr>
+    <tr><td style="font-size:15px;color:black;">&#9899;{{todo.graphics}}</td></tr>
+    
+    </table>
+    </b>
+    
+   
+  </div>
+  </a>
+</div>
+  </body>
+</html>

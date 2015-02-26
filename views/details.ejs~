@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>Laptop Gallery</title>
+</head>
+<body>
+<% =todo.price %>
+</body>
+</html>
