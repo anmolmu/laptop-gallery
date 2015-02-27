@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Laptop Gallery</title>
+</head>
+<body>
+<pre>
+<form action="/add" method="post">
+	Enter ID       : <input name="id"><br/>
+	Enter name     : <input name="name"><br/>
+	Enter price    : <input name="price"><br/>
+	Enter input    : <input name="input"><br/>
+	Enter power    : <input name="power"><br/>
+	Enter display  : <input name="display"><br/>
+	Enter storage  : <input name="storage"><br/>
+	Enter memory   : <input name="memory"><br/>
+	Enter graphics : <input name="graphics"><br/>
+	Choose image   : <input type="file" name="limg"><br/>
+	<input type="submit" value="ADD">
+</form>
+</pre>
+</body>
+</html>

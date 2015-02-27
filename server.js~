@@ -39,7 +39,7 @@ app.get(  '/',            routes.index );
 app.get(  '/list',            routes.list );
 app.get('/details',routes.details);
 app.post('/add',routes.add);
-app.get('/additem',routes.additem);
+app.get('/additem',routes.details);
 app.use( static( path.join( __dirname, 'public' )));
 
 // development only
