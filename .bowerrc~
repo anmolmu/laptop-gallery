@@ -5,6 +5,4 @@
           "registry": ".bower-registry"
   },
   "tmp": ".bower-tmp",
-  "proxy":"http://172.31.16.10:8080",
-  "https-proxy":"http://172.31.16.10:8080"
 }
